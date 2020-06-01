@@ -28,7 +28,8 @@ SRCS := $(wildcard *.c)
 #SRCS += $(LIBRARY_DIR)/source/lcd.c
 SRCS += $(LIBRARY_DIR)/source/uart.c
 #SRCS += $(LIBRARY_DIR)/source/twi.c
-SRCS += $(LIBRARY_DIR)/source/SoftwareSerial.c
+#SRCS += $(LIBRARY_DIR)/source/SoftwareSerial.c
+SRCS += $(LIBRARY_DIR)/source/softuart.c
 ASSRC := $(wildcard *.S)
 
 

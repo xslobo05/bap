@@ -11,8 +11,10 @@
 
 /* Includes ----------------------------------------------------------*/
 #include <avr/io.h>
+#include <avr/interrupt.h>
 #include <util/delay.h>
-#include "SoftwareSerial.h"
+#include "uart.h"
+#include "softuart.h"
 
 
 /* Typedef -----------------------------------------------------------*/
@@ -21,9 +23,11 @@
 #define RX          PD2
 #define TX          PD3
 #define BLINK_DELAY 250
+#define UART_BAUD_RATE 9600
 
 
 /* Variables ---------------------------------------------------------*/
+
 /* Function prototypes -----------------------------------------------*/
 
 /* Functions ---------------------------------------------------------*/
@@ -31,33 +35,43 @@
 
 
 
+
 /* Toggle a LED with the delay function. */
 int main(void)
 {
-    // Set output pin
     DDRB = DDRB | _BV(LED_GREEN);       // DDRB OR 0010 0000
-
-    // Set pin low, ie turn LED off
     PORTB = PORTB & ~_BV(LED_GREEN);    // PORTB AND 1101 1111
-
-    softSerialInit(&DDRD,&PORTD,&PIND,PD2,PD3);
-    softSerialBegin(9600);
+    
+    uint8_t znak = 'a';
     
 
-    
 
-    // Infinite loop
+
+    softuart_init();
+    softuart_turn_rx_on();
+    uart_init(UART_BAUD_SELECT(UART_BAUD_RATE, F_CPU));
+    
+    
+    sei();
+    //uart_puts("UART init\r\n");
+    softuart_flush_input_buffer();
+
     for (;;) {
-        // Invert LED and delay
-        PORTB = PORTB ^ _BV(LED_GREEN); // PORTB XOR 0010 0000
-        softSerialWrite('a');
-        _delay_ms (BLINK_DELAY);        // Wait for several miliseconds
-
+        
+        znak = softuart_getchar();
+        if(znak >= 'a' && znak <= ){
+            
+            uart_putc(znak);
+            PORTB = PORTB ^ _BV(LED_GREEN); // PORTB XOR 0010 0000
+            //_delay_ms (BLINK_DELAY);        // Wait for several miliseconds   
+        }
+        else softuart_flush_input_buffer();
         
     }
 
-    // Will never reach this
-    return (0);
+       
+
+    return 0;
 }
 
 /* Interrupts --------------------------------------------------------*/

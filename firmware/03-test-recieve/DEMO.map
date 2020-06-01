@@ -1,0 +1,691 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                              SoftwareSerial.o (__udivmodsi4)
+c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                              c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o (exit)
+c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                              SoftwareSerial.o (__do_copy_data)
+c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                              uart.o (__do_clear_bss)
+c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                              SoftwareSerial.o (__muluhisi3)
+c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                              c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o) (__umulhisi3)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+LOAD main.o
+LOAD uart.o
+LOAD SoftwareSerial.o
+LOAD softuart.o
+START GROUP
+LOAD c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a
+LOAD c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libm.a
+LOAD c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libc.a
+LOAD c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5\libatmega328p.a
+END GROUP
+                0x00020000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x8b0
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+                0x00000068                . = ALIGN (0x2)
+                0x00000068                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000068        0x0 linker stubs
+ *(.trampolines*)
+                0x00000068                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+ *(.progmem*)
+                0x00000068                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000068                __ctors_start = .
+ *(.ctors)
+                0x00000068                __ctors_end = .
+                0x00000068                __dtors_start = .
+ *(.dtors)
+                0x00000068                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000068        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x00000068                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000068        0xc c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000074       0x16 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                0x00000074                __do_copy_data
+ .init4         0x0000008a       0x10 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                0x0000008a                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000009a        0x8 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ *(.init9)
+ *(.text)
+ .text          0x000000a2        0x4 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+                0x000000a2                __vector_22
+                0x000000a2                __vector_1
+                0x000000a2                __vector_24
+                0x000000a2                __vector_12
+                0x000000a2                __bad_interrupt
+                0x000000a2                __vector_6
+                0x000000a2                __vector_23
+                0x000000a2                __vector_25
+                0x000000a2                __vector_11
+                0x000000a2                __vector_13
+                0x000000a2                __vector_17
+                0x000000a2                __vector_7
+                0x000000a2                __vector_5
+                0x000000a2                __vector_4
+                0x000000a2                __vector_9
+                0x000000a2                __vector_2
+                0x000000a2                __vector_21
+                0x000000a2                __vector_15
+                0x000000a2                __vector_8
+                0x000000a2                __vector_10
+                0x000000a2                __vector_16
+                0x000000a2                __vector_20
+ .text          0x000000a6        0x0 main.o
+ .text          0x000000a6      0x17e uart.o
+                0x000000a6                __vector_18
+                0x00000102                __vector_19
+                0x00000156                uart_init
+                0x00000188                uart_getc
+                0x000001c4                uart_putc
+                0x000001ee                uart_puts
+                0x00000206                uart_puts_p
+ .text          0x00000224      0x3c8 SoftwareSerial.o
+                0x00000232                __vector_3
+                0x0000033e                softSerialInit
+                0x00000364                softSerialBegin
+                0x00000456                softSerialEnd
+                0x00000464                softSerialRead
+                0x0000049a                softSerialAvailable
+                0x000004b2                softSerialOverflow
+                0x000004c0                softSerialWrite
+                0x000005ae                softSerialFlush
+                0x000005c6                softSerialPeek
+ .text          0x000005ec      0x20e softuart.o
+                0x000005ec                __vector_14
+                0x0000070a                softuart_init
+                0x0000073a                softuart_turn_rx_on
+                0x00000740                softuart_turn_rx_off
+                0x00000748                softuart_getchar
+                0x00000770                softuart_kbhit
+                0x00000782                softuart_flush_input_buffer
+                0x0000078c                softuart_transmit_busy
+                0x0000079a                softuart_putchar
+                0x000007c4                softuart_puts
+                0x000007dc                softuart_puts_p
+ .text          0x000007fa        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x000007fa        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text          0x000007fa        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text          0x000007fa        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text          0x000007fa        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text          0x000007fa        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x000007fa                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x000007fa       0x3a main.o
+                0x000007fa                main
+ .text.libgcc.mul
+                0x00000834        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.div
+                0x00000834       0x44 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                0x00000834                __udivmodsi4
+ .text.libgcc   0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.prologue
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.builtins
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fmul
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.fixed
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .text.libgcc.mul
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.fixed
+                0x00000878        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x00000878       0x16 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                0x00000878                __muluhisi3
+ .text.libgcc.div
+                0x0000088e        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc   0x0000088e        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.prologue
+                0x0000088e        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.builtins
+                0x0000088e        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fmul
+                0x0000088e        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.fixed
+                0x0000088e        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .text.libgcc.mul
+                0x0000088e       0x1e c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x0000088e                __umulhisi3
+ .text.libgcc.div
+                0x000008ac        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc   0x000008ac        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.prologue
+                0x000008ac        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.builtins
+                0x000008ac        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fmul
+                0x000008ac        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ .text.libgcc.fixed
+                0x000008ac        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                0x000008ac                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000008ac        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x000008ac                _exit
+                0x000008ac                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000008ac        0x4 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000008b0                _etext = .
+
+.data           0x00800100        0x2 load address 0x000008b0
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .data          0x00800100        0x0 main.o
+ .data          0x00800100        0x0 uart.o
+ .data          0x00800100        0x0 SoftwareSerial.o
+ .data          0x00800100        0x0 softuart.o
+ .data          0x00800100        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800100        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .data          0x00800100        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800100        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800100        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .data          0x00800100        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ *(.data*)
+ *(.gnu.linkonce.d*)
+ *(.rodata)
+ .rodata        0x00800100        0x2 SoftwareSerial.o
+                0x00800100                XMIT_START_ADJUSTMENT
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+                0x00800102                . = ALIGN (0x2)
+                0x00800102                _edata = .
+                0x00800102                PROVIDE (__data_end, .)
+
+.bss            0x00800102       0xc7
+                0x00800102                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800102        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .bss           0x00800102        0x0 main.o
+ .bss           0x00800102       0x45 uart.o
+ .bss           0x00800147       0x54 SoftwareSerial.o
+                0x00800147                _buffer_overflow
+                0x00800149                _tx_delay
+                0x0080014b                _rx_delay_stopbit
+                0x0080014d                _rx_delay_intrabit
+                0x0080014f                _rx_delay_centering
+                0x00800151                txpin
+                0x00800152                rxpin
+                0x00800153                serpin
+                0x00800155                serport
+                0x00800157                serddr
+ .bss           0x0080019b       0x2e softuart.o
+ .bss           0x008001c9        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x008001c9        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .bss           0x008001c9        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008001c9        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008001c9        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+ .bss           0x008001c9        0x0 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+ *(.bss*)
+ *(COMMON)
+                0x008001c9                PROVIDE (__bss_end, .)
+                0x000008b0                __data_load_start = LOADADDR (.data)
+                0x000008b2                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008001c9        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x008001c9                _end = .
+                [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x30
+ *(.comment)
+ .comment       0x00000000       0x30 main.o
+                                 0x31 (size before relaxing)
+ .comment       0x00000030       0x31 uart.o
+ .comment       0x00000030       0x31 SoftwareSerial.o
+ .comment       0x00000030       0x31 softuart.o
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0x80
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 main.o
+ .debug_aranges
+                0x00000020       0x20 uart.o
+ .debug_aranges
+                0x00000040       0x20 SoftwareSerial.o
+ .debug_aranges
+                0x00000060       0x20 softuart.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x1264
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_info    0x000005f4      0x139 main.o
+ .debug_info    0x0000072d      0x30c uart.o
+ .debug_info    0x00000a39      0x452 SoftwareSerial.o
+ .debug_info    0x00000e8b      0x3d9 softuart.o
+
+.debug_abbrev   0x00000000      0xb5f
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_abbrev  0x000005a2       0x9d main.o
+ .debug_abbrev  0x0000063f      0x111 uart.o
+ .debug_abbrev  0x00000750      0x219 SoftwareSerial.o
+ .debug_abbrev  0x00000969      0x1f6 softuart.o
+
+.debug_line     0x00000000      0x864
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1a c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_line    0x0000001a       0xee main.o
+ .debug_line    0x00000108      0x1c4 uart.o
+ .debug_line    0x000002cc      0x310 SoftwareSerial.o
+ .debug_line    0x000005dc      0x288 softuart.o
+
+.debug_frame    0x00000000      0x358
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x24 main.o
+ .debug_frame   0x00000024       0xe0 uart.o
+ .debug_frame   0x00000104      0x158 SoftwareSerial.o
+ .debug_frame   0x0000025c       0xfc softuart.o
+
+.debug_str      0x00000000      0x7a8
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+ .debug_str     0x00000208      0x12b main.o
+                                0x169 (size before relaxing)
+ .debug_str     0x00000333      0x125 uart.o
+                                0x206 (size before relaxing)
+ .debug_str     0x00000458      0x1ba SoftwareSerial.o
+                                0x2ce (size before relaxing)
+ .debug_str     0x00000612      0x196 softuart.o
+                                0x303 (size before relaxing)
+
+.debug_loc      0x00000000      0x8e7
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x2b main.o
+ .debug_loc     0x0000002b      0x32c uart.o
+ .debug_loc     0x00000357      0x368 SoftwareSerial.o
+ .debug_loc     0x000006bf      0x228 softuart.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000       0x28
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 main.o
+ .debug_ranges  0x00000010       0x18 SoftwareSerial.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(DEMO.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+XMIT_START_ADJUSTMENT                             SoftwareSerial.o
+__FUSE_REGION_LENGTH__                            c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__bad_interrupt                                   c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__bss_end                                         c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+__bss_start                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+__data_end                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+__data_load_start                                 c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+__data_start                                      c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+__do_clear_bss                                    c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_clear_bss.o)
+                                                  softuart.o
+                                                  SoftwareSerial.o
+                                                  uart.o
+__do_copy_data                                    c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_copy_data.o)
+                                                  SoftwareSerial.o
+__heap_end                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__init                                            c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__muluhisi3                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+                                                  SoftwareSerial.o
+__stack                                           c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__udivmodsi4                                      c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_udivmodsi4.o)
+                                                  SoftwareSerial.o
+__umulhisi3                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_umulhisi3.o)
+                                                  c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_muluhisi3.o)
+__vector_1                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_10                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_11                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_12                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_13                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_14                                       softuart.o
+                                                  c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_15                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_16                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_17                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_18                                       uart.o
+                                                  c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_19                                       uart.o
+                                                  c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_2                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_20                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_21                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_22                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_23                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_24                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_25                                       c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_3                                        SoftwareSerial.o
+                                                  c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_4                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_5                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_6                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_7                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_8                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_9                                        c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vector_default                                  c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+__vectors                                         c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+_buffer_overflow                                  SoftwareSerial.o
+_exit                                             c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+_rx_delay_centering                               SoftwareSerial.o
+_rx_delay_intrabit                                SoftwareSerial.o
+_rx_delay_stopbit                                 SoftwareSerial.o
+_tx_delay                                         SoftwareSerial.o
+exit                                              c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                                                  c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+main                                              main.o
+                                                  c:/appz/avr/avr8-gnu-toolchain-win32_x86/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/crtatmega328p.o
+rxpin                                             SoftwareSerial.o
+serddr                                            SoftwareSerial.o
+serpin                                            SoftwareSerial.o
+serport                                           SoftwareSerial.o
+softSerialAvailable                               SoftwareSerial.o
+softSerialBegin                                   SoftwareSerial.o
+softSerialEnd                                     SoftwareSerial.o
+softSerialFlush                                   SoftwareSerial.o
+softSerialInit                                    SoftwareSerial.o
+softSerialOverflow                                SoftwareSerial.o
+softSerialPeek                                    SoftwareSerial.o
+softSerialRead                                    SoftwareSerial.o
+softSerialWrite                                   SoftwareSerial.o
+softuart_flush_input_buffer                       softuart.o
+                                                  main.o
+softuart_getchar                                  softuart.o
+                                                  main.o
+softuart_init                                     softuart.o
+                                                  main.o
+softuart_kbhit                                    softuart.o
+softuart_putchar                                  softuart.o
+softuart_puts                                     softuart.o
+softuart_puts_p                                   softuart.o
+softuart_transmit_busy                            softuart.o
+softuart_turn_rx_off                              softuart.o
+softuart_turn_rx_on                               softuart.o
+                                                  main.o
+txpin                                             SoftwareSerial.o
+uart_getc                                         uart.o
+uart_init                                         uart.o
+                                                  main.o
+uart_putc                                         uart.o
+                                                  main.o
+uart_puts                                         uart.o
+uart_puts_p                                       uart.o

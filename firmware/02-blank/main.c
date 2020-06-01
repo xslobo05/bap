@@ -12,15 +12,13 @@
 /* Includes ----------------------------------------------------------*/
 #include <avr/io.h>
 #include <util/delay.h>
-#include "SoftwareSerial.h"
+#include "softuart.h"
+
 
 
 /* Typedef -----------------------------------------------------------*/
 /* Define ------------------------------------------------------------*/
-#define LED_GREEN   PB5
-#define RX          PD2
-#define TX          PD3
-#define BLINK_DELAY 250
+
 
 
 /* Variables ---------------------------------------------------------*/
@@ -34,30 +32,7 @@
 /* Toggle a LED with the delay function. */
 int main(void)
 {
-    // Set output pin
-    DDRB = DDRB | _BV(LED_GREEN);       // DDRB OR 0010 0000
-
-    // Set pin low, ie turn LED off
-    PORTB = PORTB & ~_BV(LED_GREEN);    // PORTB AND 1101 1111
-
-    softSerialInit(&DDRD,&PORTD,&PIND,PD2,PD3);
-    softSerialBegin(9600);
     
-
-    
-
-    // Infinite loop
-    for (;;) {
-        // Invert LED and delay
-        PORTB = PORTB ^ _BV(LED_GREEN); // PORTB XOR 0010 0000
-        softSerialWrite('a');
-        _delay_ms (BLINK_DELAY);        // Wait for several miliseconds
-
-        
-    }
-
-    // Will never reach this
-    return (0);
 }
 
 /* Interrupts --------------------------------------------------------*/
